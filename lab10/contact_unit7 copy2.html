@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .links {float: right;}
+            .address {float: left; margin-right: 30px;}
+           .row2 {display: flex; background-color: #ebebda; border-radius: 1em; padding: 20px; margin: 20px;}
+           .row1 {display: flex; background-color: #999999; border-radius: 1em; margin: 20px; padding: 20px;}
+           .map {flex: 1; margin-right: 20px;}
+           .form {flex: 1;}
+        </style>
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a> &vert;
+            <a href="contact_unit7.html">Contact</a> &vert;
+            <a href="skills_unit7.html">Skills</a>
+        </nav>
+        <h1>Contact</h1> <br>
+        <div class="row1">
+        <div class="address">
+            Amina Shreve <br>
+            520 Slocum Heights <br>
+            Apartment 3 <br>
+            Syracuse, NY 13210 
+        </div>
+        <div class="links">
+
+        <p>
+            <a href="mailto:akshreve@syr.edu">Amina Shreve's Email</a>
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/aminashreve/">My LinkedIn Profile</a>
+            <img src="../images/logo-sized.png" alt="linkedin logo">
+        </p>
+        </div>
+        </div>
+        
+        <div class="row2">
+        <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.080877214256!2d-76.1169967846074!3d43.01868480124553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f36217f5073d%3A0xfc43b2ba19977a2b!2s520%20Slocum%20Dr%20%233%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1614270396284!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    
+        <div class="form">
+    <form action="mailto:akshreve@syr.edu" method="POST">
+        <label for="firstname">Enter first name:</label>
+        <input type="text" name="firstname" id="firstname"><br>
+
+        <label for="comments">Send me an e-mail:</label><br>
+        <textarea name="comments" id="comments" rows="10" cols="80"> Write your message here</textarea><br>
+
+        <label for="maillist">Do you want to be on a maillist?</label>
+            <input type="checkbox" name="maillist" id="maillist" value="yes"><br>
+    
+            <input type="submit" value="Send Email">
+        </form>
+    </div>
+</div>
+    </body>
+</html>
