@@ -3,8 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>Question and Answer</title>
+        <style>
+            body {
+                background-color: #fbadbd;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            nav {
+                background-color: white;
+                padding: 10px;
+                margin-bottom: 30px;
+            }
+            nav a {color:black;}
+            nav a:hover {color: palevioletred;}
+
+            a:link {color:black;} 
+            a:hover {color:purple;}
+        </style>
     </head>
     <body>
+        <nav>
+            <a href="home.html">Home</a> &vert;
+            <a href="lookbook.html">Lookbook</a> &vert;
+            <a href="questions.html">Questions and Answers</a>
+        </nav>
+
         <h1>Ask a question ...</h1>
         <p>
             Ever wondered if the outfit you picked out is appropriate for the dress code for an event?
@@ -19,8 +41,10 @@
             Our advice ranges from simple fashion tips and how to survive fashion trends, to information on different brands with our focuses on affordability and sustainability.
         </p>
 
+        <form action="mailto:akshreve@syr.edu" method="POST">
         <label for="comments">Write your questions in the box below to get personalised responses from our team of fashion experts.</label><br>
         <textarea name="comments" id="comments" rows="10" cols="100"> Ask us anything ...</textarea><br>
+        </form>
 
          <h3>Contact</h3>
             Amina Shreve <br>

@@ -3,6 +3,41 @@
     <head>
         <meta charset="utf-8">
         <title>Home Page</title>
+        <style>
+            body {
+                background-color: #fbadbd;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            nav {
+                background-color: white;
+                padding: 10px;
+                margin-bottom: 30px;
+            }
+            nav a {color:black;}
+            nav a:hover {color: palevioletred;}
+
+            .intro {padding: 10px;
+                margin-bottom: 30px;}
+
+            .article1 {padding: 10px;
+                margin-bottom: 30px;}
+
+            .article2 {padding: 10px;
+                margin-bottom: 30px;}
+
+            .img1, .img2 {flex: 1;}
+            .img1 {margin-left: 10px;}
+
+            .pocket {
+                float: left;
+                margin: 0px 20px 10px 0px; 
+            }
+            .stopfloat {clear:both;}
+            .cheetah {
+                float: right;
+                margin: 0px 20px 10px 0px; 
+            }
+        </style>
     </head>
     <body>
         <nav>
@@ -10,14 +45,22 @@
             <a href="lookbook.html">Lookbook</a> &vert;
             <a href="questions.html">Questions and Answers</a>
         </nav>
-
+        <header>
+            <img src="media/banner.jpg" alt="fashion collage banner" class="img1">
+            <img src="media/banner.jpg" alt="fashion collage banner copy" class="img2">
+        </header>
+    
+    <div class="intro">
         <h1>Welcome to your new go-to fashion site</h1><br>
 
         <p>
             This is here to guide you through all the ups and downs of finding new clothes for the fast-paced environment that is college. Do you need a new dress for an upcoming event but you’ve spent all your money on takeout? Look no further because this site can help you find it. Do you have the means but don’t know where to look? We got you covered. Do all of these sound appealing but you’re concerned about the consequences of fast fashion and want to be more mindful with your shopping addiction? Don’t worry because we feel the same. This site will serve as your big sister for fashion tips and tricks to get the most out of the amazing sustainable and affordable fashion brands out there, that you just might not know of. 
         </p>
-       
+    </div>
+
+    <div class="article1">
         <h2>Looking forward in fashion: March 2021 </h2>
+        <img src="media/pocket.jpg" alt="flower pocket picture" class="pocket">
         <p>
             New month means new fashion trends and fashion moments, so the question now is, what does March 2021 have in store for us.
         </p>
@@ -30,8 +73,12 @@
 
         <p>All in all, one of the best ways to be in on the trends for spring, especially March 2021, is to gather some pieces to add a pop of color. Whether they be shoes, a scarf, a cropped sweater, or full pants, having a reliable collection of pops of color for the springtime will make the transitions of outfits a lot easier and less stressful. Checking all our favorite brands and websites is a great way to search for new trending colors--such as sage green and champagne--that will give you a whole new wardrobe without having to buy complete new outfits. That’s the key to seasonal outfit transitions on a college budget.
         </p>
+        <div class="stopfloat"></div>
+    </div>
 
+    <div class="article2">
         <h2>Fashion face-off: is cow print the new cheetah print?</h2>
+        <img src="media/cheetah.jpg" alt="cheetah print picture" class="cheetah">
         <p>
             One of the controversial things to have come out of quarantine over the past year is whether or not cow print is a trend that will live on or turn into an arguably basic and tacky print that nobody wants to see again. 
         </p>
@@ -39,13 +86,17 @@
         <p>
             I really don’t know where the trend came from or who started to incorporate it into their fashion but it found its way to the table and has stuck around since. However, there is debate about how long lasting this trend truly is and everyone’s real opinions towards it. As of now, almost every affordable and trendy brand has jumped on the bandwagon of cow print and have released several pieces that use the print, from accessories to clothing pieces and jewelry. Some of the most popular brands such as Shein have incorporated the print into every item of clothing that you can imagine. But don’t forget, Shein is one of those hidden horrors where fast and affordable fashion does not meet the sustainability factor that we all strive for. 
         </p>
-
         <p>
             So to leave it up to you guys, I’m curious. 
         </p>
 
+        <form action="mailto:akshreve@syr.edu" method="POST">
         <label for="comments">What do you think about cow print? Is it to stay or is it a no?</label><br>
         <textarea name="comments" id="comments" rows="10" cols="100"> Write your thoughts and comments here ...</textarea><br>
+        <input type="submit" value="Submit">
+        </form>
+        <div class="stopfloat"></div>
+    </div>
 
     </body>
 </html>
