@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Community</title>
+        <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: #fbadbd;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            nav {
+                background-color: white;
+                padding: 10px;
+                margin-bottom: 30px;
+            }
+            nav a {color:black;}
+            nav a:hover {color: palevioletred;}
+
+            a:link {color:black;} 
+            a:hover {color:purple;}
+            h1, h2, h3 {font-family: 'Playfair Display', serif;}
+
+            #slideshow-container {
+            background-color: white;
+            padding: 30px;
+            width: 900px;
+            margin: auto;        
+        }
+        #bigimages {margin-right: 100px;}
+        #thumbnails {width: 840px; margin: auto; padding-top: 20px;} 
+        #person1thumb, #person2thumb, #person3thumb, #person4thumb, #person5thumb, #person6thumb {width: 100px;}
+
+        #person1 {display: block;
+        float: left;}
+        #person2 {display: none;
+        float: left;}
+        #person3 {display: none;
+        float: left;}
+        #person4 {display: none;
+        float: left;}
+        #person5 {display: none;
+        float:left}
+        #person6 {display: none;
+        float: left;}
+        #thumbnails {clear: both;}
+        </style>
+        <script>
+            function personsoff() {
+            document.getElementById ('person1') .style.display ='none';
+            document.getElementById ('person2') .style.display ='none';
+            document.getElementById ('person3') .style.display ='none';
+            document.getElementById ('person4') .style.display ='none';
+            document.getElementById ('person5') .style.display ='none';
+            document.getElementById ('person6') .style.display ='none';
+        }
+
+        function person1on () {
+                document.getElementById('person1').style.display='block';
+        }
+        function person2on () {
+                document.getElementById('person2').style.display='block';
+        }
+
+        function person3on () {
+                document.getElementById('person3').style.display='block';
+        }
+        function person4on () {
+                document.getElementById('person4').style.display='block';
+        }
+
+        function person5on () {
+                document.getElementById('person5').style.display='block';
+        }
+        function person6on () {
+                document.getElementById('person6').style.display='block';
+        }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <a href="home.html">Home</a> &vert;
+            <a href="lookbook.html">Lookbook</a> &vert;
+            <a href="community.html">Community</a>
+        </nav>
+
+        <h1>Community</h1>
+        <p>
+            Welcome to the community! We are so happy to see you. 
+        </p>
+        <p>
+            Take a look through this slideshow to get to know our faces! 
+        </p>
+
+        <div id="slideshow-container">
+            <div id="bigimages">
+                <img src="media/slideshow/person1.jpg" alt="person1" id="person1">
+        
+                <div id="groupselector">
+                <img src="media/slideshow/person2.jpg" alt="person2" id="person2">
+                <img src="media/slideshow/person3.jpg" alt="person3" id="person3">
+                <img src="media/slideshow/person4.jpg" alt="person4" id="person4">
+                <img src="media/slideshow/person5.jpg" alt="person5" id="person5">
+                <img src="media/slideshow/person6.jpg" alt="person6" id="person6">
+                </div>
+            </div>
+            <div id="thumbnails">
+                <img src="media/slideshow/person1.jpg" alt="person1" id="person1thumb" onclick= "personoff(); person1on();">
+                <img src="media/slideshow/person2.jpg" alt="person2" id="person2thumb" onclick= "personoff(); person2on();">
+                <img src="media/slideshow/person3.jpg" alt="person3" id="person3thumb" onclick="personoff(); person3on();">
+                <img src="media/slideshow/person4.jpg" alt="person4" id="person4thumb" onclick="personoff(); person4on();">
+                <img src="media/slideshow/person5.jpg" alt="person5" id="person5thumb" onclick="personoff(); person5on();">
+                <img src="media/slideshow/person6.jpg" alt="person6" id="person6thumb" onclick="personoff(); person6on();">
+            </div>
+        </div>
+
+        <h2>Ask a question ...</h1>
+        <p>
+            Ever wondered if the outfit you picked out is appropriate for the dress code for an event?
+        </p>
+        <p>
+            Ever wanted fashion advice from an unbiased party?
+        </p>
+        <p>
+            Ever questioned whether or not a fashion brand is sustainable?
+        </p>
+        <p>
+            Our advice ranges from simple fashion tips and how to survive fashion trends, to information on different brands with our focuses on affordability and sustainability.
+        </p>
+
+        <form action="mailto:akshreve@syr.edu" method="POST">
+        <label for="comments">Write your questions in the box below to get personalised responses from our team of fashion experts.</label><br>
+        <textarea name="comments" id="comments" rows="10" cols="100"> Ask us anything ...</textarea><br>
+        </form>
+
+         <h3>Contact</h3>
+            Amina Shreve <br>
+            520 Slocum Heights <br>
+            Apartment 3 <br>
+            Syracuse, NY 13210 
+
+        <p>
+            <a href="mailto:akshreve@syr.edu">Amina Shreve's Email</a>
+        </p>
+    </body>
+</html>
